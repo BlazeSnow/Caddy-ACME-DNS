@@ -3,6 +3,8 @@ description: Publish Docker image to Alibaba Cloud Container Registry
 
 on:
   workflow_dispatch:
+  schedule:
+  - cron: "0 17 * * *"
   push:
     branches: [ main ]
 
