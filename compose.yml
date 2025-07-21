@@ -1,6 +1,0 @@
-services:
-  build-caddy-acme-dns:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: registry.cn-hangzhou.aliyuncs.com/blazesnow/caddy:cloudflare
