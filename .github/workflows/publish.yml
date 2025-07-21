@@ -18,8 +18,7 @@ jobs:
     - name: Log in
       uses: docker/login-action@v3
       with:
-        registry: registry.cn-hangzhou.aliyuncs.com
-        username: BlazeSnow23
+        username: blazesnow
         password: ${{ secrets.TOKEN }}
         logout: true
 
@@ -34,4 +33,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: registry.cn-hangzhou.aliyuncs.com/blazesnow/caddy:cloudflare
+        tags: blazesnow/caddy:cloudflare-alpine
