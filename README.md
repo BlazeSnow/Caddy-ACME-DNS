@@ -2,6 +2,12 @@
 
 > 启用Caddy的DNS质询提供商Cloudflare
 
+<https://hub.docker.com/r/blazesnow/caddy>
+
+```shell
+docker pull blazesnow/caddy:cloudflare-alpine
+```
+
 ## DNS 质询
 
 <https://caddyserver.com/docs/automatic-https#acme-challenges>
