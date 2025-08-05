@@ -1,7 +1,7 @@
-FROM caddy:builder-alpine AS builder
+FROM alpine:latest
 
-RUN xcaddy build --with github.com/caddy-dns/cloudflare
+COPY /build/caddy /usr/bin/caddy
 
-FROM caddy:alpine
+ENTRYPOINT [ "/usr/bin/caddy" ]
 
-COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+CMD ["version"]
