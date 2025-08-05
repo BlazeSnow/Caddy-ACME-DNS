@@ -34,6 +34,9 @@ jobs:
     - name: go install xcaddy
       run: go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 
+    - name: Make output directory
+      run: mkdir -p /build/caddy
+
     - name: xcaddy build
       run: xcaddy build --with github.com/caddy-dns/cloudflare --output /build/caddy
 
