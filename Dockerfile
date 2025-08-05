@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-COPY ./build/caddy /caddy
+COPY /build/caddy /usr/bin/caddy
 
-ENTRYPOINT [ "/caddy" ]
+ENTRYPOINT [ "/usr/bin/caddy" ]
 
 CMD ["version"]
