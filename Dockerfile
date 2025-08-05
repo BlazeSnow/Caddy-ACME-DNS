@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-COPY /build/caddy /caddy
+COPY ./build/caddy /caddy
 
 ENTRYPOINT [ "/caddy" ]
 

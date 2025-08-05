@@ -35,10 +35,10 @@ jobs:
       run: go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 
     - name: Make output directory
-      run: mkdir -p /build/caddy
+      run: mkdir -p ./build
 
     - name: xcaddy build
-      run: xcaddy build --with github.com/caddy-dns/cloudflare --output /build/caddy
+      run: xcaddy build --with github.com/caddy-dns/cloudflare --output ./build/caddy
 
     - name: Build and push
       uses: docker/build-push-action@v6
