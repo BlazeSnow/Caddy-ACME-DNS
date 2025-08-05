@@ -8,8 +8,8 @@ RUN xcaddy build --with github.com/caddy-dns/cloudflare
 
 FROM alpine:latest
 
-COPY --from=builder /build/caddy /caddy
+COPY --from=builder /build/caddy /usr/bin/caddy
 
-ENTRYPOINT [ "/caddy" ]
+ENTRYPOINT [ "/usr/bin/caddy" ]
 
 CMD ["version"]
