@@ -2,6 +2,6 @@ FROM alpine:latest
 
 COPY ./build/caddy /usr/bin/caddy
 
-ENTRYPOINT [ "/usr/bin/caddy" ]
+RUN chmod 755 /usr/bin/caddy
 
-CMD ["version"]
+CMD ["caddy","version"]
