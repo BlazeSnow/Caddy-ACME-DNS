@@ -1,6 +1,14 @@
+FROM golang:alpine AS builder
+
+RUN go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
+
+WORKDIR /build
+
+RUN xcaddy build --with github.com/caddy-dns/cloudflare
+
 FROM alpine:latest
 
-COPY ./build/caddy /usr/bin/caddy
+COPY --from=builder /build/caddy /usr/bin/caddy
 
 RUN chmod 755 /usr/bin/caddy
 

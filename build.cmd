@@ -1,1 +1,1 @@
-docker.exe build -t blazesnow/caddy:dev -f Dockerfile.dev .
+docker.exe build -t blazesnow/caddy:dev .
