@@ -14,6 +14,8 @@ COPY --from=builder /build/caddy /usr/bin/caddy
 
 RUN chmod 700 /usr/bin/caddy
 
+COPY ./Caddyfile /etc/caddy/Caddyfile
+
 EXPOSE 80 443 443/udp 2019
 
 CMD ["/usr/bin/caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
