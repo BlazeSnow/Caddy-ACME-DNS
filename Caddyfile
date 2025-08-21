@@ -1,5 +1,0 @@
-:80 {
-	handle {
-		respond "blazesnow/caddy-cloudflare:alpine"
-	}
-}
