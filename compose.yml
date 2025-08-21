@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: blazesnow/caddy:cloudflare-alpine
+    image: blazesnow/caddy-cloudflare:alpine
     container_name: caddy
     restart: unless-stopped
     ports:

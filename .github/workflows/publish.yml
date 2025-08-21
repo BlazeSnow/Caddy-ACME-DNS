@@ -45,5 +45,5 @@ jobs:
         context: .
         push: true
         tags: |
-          blazesnow/caddy:cloudflare-alpine
-          ghcr.io/blazesnow/caddy:cloudflare-alpine
+          blazesnow/caddy-cloudflare:alpine
+          ghcr.io/blazesnow/caddy-cloudflare:alpine
