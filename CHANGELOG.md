@@ -1,5 +1,9 @@
 # 更新日志
 
+## 2025-08-21 09:13:28
+
+- 修改docker镜像名：`blazesnow/caddy-cloudflare:alpine`
+
 ## v1.0.0
 
 2025-08-15 22:48:07
